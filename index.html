@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhammad Iqbal Maulana | Graphic designer and IoT enthusiast</title>
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Iqbal Maulana, a graphic designer and IoT enthusiast from Semarang, Indonesia."
+    />
+    <meta name="theme-color" content="#161716" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Iqbal Maulana | Portfolio" />
+    <meta
+      property="og:description"
+      content="Graphic designer and IoT enthusiast. Posters, colour studies and small IoT builds."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500..900;1,6..96,500..800&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-pen" viewBox="0 0 24 24"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+        <symbol id="i-lang" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+        <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+        <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+        <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.6-.8L3 21l1.9-5.3A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></symbol>
+        <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      </defs>
+    </svg>
+
+    <div class="scene" aria-hidden="true">
+      <div class="scene-layer wall" data-depth="0.12"></div>
+      <div class="scene-layer" data-depth="0.3"></div>
+      <div class="scene-layer" data-depth="0.65"></div>
+      <div class="scene-layer" data-depth="1"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Iqbal, back to top">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Iqbal</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu" /></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close" /></svg>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container page-shell">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="name-lockup">
+            <span class="nl-row"><span class="nl-first">Muhammad</span><span class="nl-bar" aria-hidden="true"></span></span>
+            <span class="nl-mid">Iqbal</span>
+            <span class="nl-last">Maulana</span>
+          </h1>
+          <p class="role">Graphic designer and IoT enthusiast</p>
+          <p class="lead">
+            I am a creative student who enjoys visual design, digital storytelling, and
+            simple technology projects. I am fluent in Indonesian and English, and I
+            like combining aesthetics with practical problem solving.
+          </p>
+
+          <div class="cta-row">
+            <a href="#portfolio" class="btn btn-primary">View projects</a>
+            <a href="#cv" class="btn btn-secondary">View CV</a>
+            <a href="#contact" class="btn btn-secondary">Contact me</a>
+          </div>
+          <a class="hero-mail" href="mailto:maulana.iqbal0304@gmail.com">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>
+            maulana.iqbal0304@gmail.com
+          </a>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="hero-image-frame">
+            <img
+              src="assets/img/hero.webp"
+              width="900"
+              height="1369"
+              alt="Portrait of Muhammad Iqbal Maulana wearing glasses, with trees behind him"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption class="float-card">
+            <strong>SMK Negeri 7 Semarang</strong>
+            <span>Student, 2024 to present</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <ul class="facts reveal" aria-label="At a glance">
+        <li><strong>4+</strong><span>Design projects</span></li>
+        <li><strong>2</strong><span>IoT builds</span></li>
+        <li><strong>4</strong><span>Certificates</span></li>
+        <li><strong>2</strong><span>Languages</span></li>
+      </ul>
+
+      <section id="about" class="section reveal" aria-labelledby="about-title">
+        <div class="section-head">
+          <h2 id="about-title" class="lockup"><span class="lk-s">What I</span> <span class="lk-xl">do</span></h2>
+        </div>
+
+        <div class="content-grid">
+          <div class="card inset-card">
+            <div class="avatar-box">
+              <img
+                src="assets/img/about.webp"
+                width="343"
+                height="461"
+                alt="Muhammad Iqbal in a school uniform"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <ul class="focus-list">
+              <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-pen" /></svg></span>Graphic design</li>
+              <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-cpu" /></svg></span>IoT project interest</li>
+              <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-lang" /></svg></span>Indonesian + English</li>
+            </ul>
+          </div>
+
+          <div class="about-copy">
+            <p class="about-lead">I am the kind of person who enjoys making ideas visually stronger.</p>
+            <p>
+              I like graphic design because it lets me turn concepts into something clear,
+              attractive, and memorable. I also enjoy learning practical technology, especially
+              in the Internet of Things field.
+            </p>
+            <p>
+              My experience in IoT is still moderate, but I have contributed to small projects
+              such as a miniature greenhouse/smartfarm and an automatic cat feeder. These
+              experiences helped me understand how design, automation, and user needs can be
+              connected in daily life.
+            </p>
+
+            <div class="quality-list">
+              <div class="quality">
+                <strong>Design-first</strong>
+                <span>Clean, balanced, modern visuals</span>
+              </div>
+              <div class="quality">
+                <strong>Tech-curious</strong>
+                <span>Exploring solutions in IoT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal" aria-labelledby="skills-title">
+        <div class="section-head">
+          <h2 id="skills-title" class="lockup"><span class="lk-s">Creative and technical</span><span class="lk-br"></span><span class="lk-xl">abilities</span></h2>
+        </div>
+
+        <div class="skill-grid">
+          <div class="card skill-card">
+            <h3>Graphic design</h3>
+
+            <div class="skill-row">
+              <div class="skill-top"><span>Poster &amp; visual design</span><span>90%</span></div>
+              <div class="bar" style="--v: 90%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Branding / art direction</span><span>82%</span></div>
+              <div class="bar" style="--v: 82%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Layout composition</span><span>88%</span></div>
+              <div class="bar" style="--v: 88%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Color and typography</span><span>85%</span></div>
+              <div class="bar" style="--v: 85%" aria-hidden="true"><span></span></div>
+            </div>
+          </div>
+
+          <div class="card skill-card">
+            <h3>IoT &amp; tools</h3>
+
+            <div class="skill-row">
+              <div class="skill-top"><span>Microcontroller basics</span><span>70%</span></div>
+              <div class="bar" style="--v: 70%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Sensor integration</span><span>65%</span></div>
+              <div class="bar" style="--v: 65%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Automation concept</span><span>74%</span></div>
+              <div class="bar" style="--v: 74%" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Problem-solving</span><span>78%</span></div>
+              <div class="bar" style="--v: 78%" aria-hidden="true"><span></span></div>
+            </div>
+          </div>
+
+          <div class="card skill-card">
+            <h3>Soft skills</h3>
+            <ul class="chips">
+              <li>Drawing</li>
+              <li>English communication</li>
+              <li>Patience</li>
+              <li>Teamwork</li>
+              <li>Curiosity</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>Indonesian</li>
+              <li>English</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section reveal" aria-labelledby="portfolio-title">
+        <div class="section-head">
+          <h2 id="portfolio-title" class="lockup"><span class="lk-s">Selected</span> <span class="lk-xl">design</span> <span class="lk-s">and project work</span></h2>
+          <p class="section-note">Select a poster or slide to view it full size.</p>
+        </div>
+
+        <div class="poster-grid">
+          <article class="project">
+            <button
+              class="poster"
+              type="button"
+              data-lightbox
+              data-group="posters"
+              data-full="assets/img/sakura-1400.webp"
+              data-title="Sakura Theme Poster"
+              aria-label="View Sakura Theme Poster full size"
+            >
+              <img
+                src="assets/img/sakura-800.webp"
+                width="800"
+                height="1132"
+                alt="Poster with cherry blossom branches on a rose-pink background, with Japanese text on both sides"
+                loading="lazy"
+                decoding="async"
+              />
+            <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="tag">Graphic design</span>
+                <ul class="swatches" aria-label="Poster colours: #ffe6e6, #be7880, #995161, #5c2d33">
+                  <li style="--c: #ffe6e6"></li>
+                  <li style="--c: #be7880"></li>
+                  <li style="--c: #995161"></li>
+                  <li style="--c: #5c2d33"></li>
+                </ul>
+              </div>
+              <h3>Sakura Theme Poster</h3>
+              <p>A mood-driven poster concept using soft gradients and floral visual storytelling.</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <button
+              class="poster"
+              type="button"
+              data-lightbox
+              data-group="posters"
+              data-full="assets/img/see-the-colours-1400.webp"
+              data-title="See the Colours"
+              aria-label="View See the Colours full size"
+            >
+              <img
+                src="assets/img/see-the-colours-800.webp"
+                width="800"
+                height="1132"
+                alt="Poster titled See the Colours: a black-and-white photo of a woman raising her hand, with an orange-framed colour portrait and yellow bars"
+                loading="lazy"
+                decoding="async"
+              />
+            <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="tag">Color study</span>
+                <ul class="swatches" aria-label="Poster colours: #f5b301, #f2701a, #dfdede, #2b2b2d">
+                  <li style="--c: #f5b301"></li>
+                  <li style="--c: #f2701a"></li>
+                  <li style="--c: #dfdede"></li>
+                  <li style="--c: #2b2b2d"></li>
+                </ul>
+              </div>
+              <h3>See the Colours</h3>
+              <p>An experimental design based on color harmony and modern graphic composition.</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <button
+              class="poster"
+              type="button"
+              data-lightbox
+              data-group="posters"
+              data-full="assets/img/blur-motion-test-1400.webp"
+              data-title="Blur Motion Test"
+              aria-label="View Blur Motion Test full size"
+            >
+              <img
+                src="assets/img/blur-motion-test-800.webp"
+                width="800"
+                height="1132"
+                alt="Fashion poster of a man in a silver jacket seated against a white panelled wall, with the words Fashion and Show Confidence"
+                loading="lazy"
+                decoding="async"
+              />
+            <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="tag">Art exploration</span>
+                <ul class="swatches" aria-label="Poster colours: #ffffff, #bcbdba, #7f7a74, #272420">
+                  <li style="--c: #ffffff"></li>
+                  <li style="--c: #bcbdba"></li>
+                  <li style="--c: #7f7a74"></li>
+                  <li style="--c: #272420"></li>
+                </ul>
+              </div>
+              <h3>Blur Motion Test</h3>
+              <p>An abstract visual piece exploring texture, depth, and layered effects in design.</p>
+            </div>
+          </article>
+        </div>
+
+        <article class="project deck" aria-labelledby="deck-title">
+          <button
+            class="deck-cover"
+            type="button"
+            data-lightbox
+            data-group="deck"
+            data-slides-from="#deck-slides"
+            data-title="How to Configure a PC"
+            aria-label="View the How to Configure a PC slides full size"
+          >
+            <img
+              src="assets/img/deck-1-1400.webp"
+              width="1400"
+              height="788"
+              alt="Title slide: How to Configure a PC, with an illustration of a computer case on a peach background"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+          </button>
+          <div class="project-info deck-info">
+            <div class="project-meta">
+              <span class="tag">Presentation design</span>
+              <ul class="swatches" aria-label="Slide colours: #ffdac2, #2c0970, #484848, #28272a">
+                <li style="--c: #ffdac2"></li>
+                <li style="--c: #2c0970"></li>
+                <li style="--c: #484848"></li>
+                <li style="--c: #28272a"></li>
+              </ul>
+            </div>
+            <h3 id="deck-title" class="deck-title"><span class="dt-s">How to</span> <span class="dt-xl">configure</span> <span class="dt-s">a</span> <span class="dt-xxl">PC</span></h3>
+            <p>
+              A five-slide presentation that walks through building a PC: the CPU socket, then RAM and
+              the graphics card, then mounting the motherboard in the case. The titles mix oversized and
+              small serif words to set the hierarchy at a glance.
+            </p>
+            <div class="deck-actions">
+              <button
+                class="btn btn-secondary btn-small"
+                type="button"
+                data-lightbox
+                data-group="deck"
+                data-slides-from="#deck-slides"
+                data-title="How to Configure a PC"
+              >
+                <svg class="icon" aria-hidden="true"><use href="#i-expand" /></svg>
+                View slides
+              </button>
+              <a class="btn btn-secondary btn-small" href="assets/pdf/how-to-configure-a-pc.pdf" download>
+                <svg class="icon" aria-hidden="true"><use href="#i-download" /></svg>
+                Download PDF
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="build-grid">
+          <article class="project build">
+            <div class="build-art" aria-hidden="true">
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M40 165H280" />
+                <path d="M76 100 160 52l84 48" />
+                <path d="M84 100v65M236 100v65M160 52v113" />
+                <path d="M122 165v-27M122 146q-14-2-16-16 14 0 16 16M122 140q12-2 14-14-12 0-14 14" />
+                <path d="M198 165v-27M198 146q-14-2-16-16 14 0 16 16M198 140q12-2 14-14-12 0-14 14" />
+                <circle cx="272" cy="118" r="6" />
+                <path d="M272 124v41M284 106q10 12 0 24M292 98q16 20 0 40" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">Smartfarm</span></div>
+              <h3>Mini Greenhouse</h3>
+              <p>A smart farm built like a miniature greenhouse, with sensors that monitor the plants. I contributed to the build.</p>
+              <button class="btn btn-secondary btn-small detail-btn" type="button" data-detail="detail-greenhouse">
+                <svg class="icon" aria-hidden="true"><use href="#i-play" /></svg>
+                How it works
+              </button>
+            </div>
+          </article>
+
+          <article class="project build">
+            <div class="build-art" aria-hidden="true">
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M104 40h112M110 40h100l-18 60h-64z" />
+                <circle cx="160" cy="68" r="12" />
+                <path d="M160 62v6h5" />
+                <path d="M144 100v22h32v-22" />
+                <circle cx="160" cy="134" r="3" />
+                <path d="M108 148h104q-4 32-52 32t-52-32z" />
+                <circle cx="146" cy="158" r="3" />
+                <circle cx="166" cy="160" r="3" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">Automation</span></div>
+              <h3>Automatic Cat Feeder</h3>
+              <p>A feeder that uses AI to detect an incoming cat, so feeding can start when one shows up.</p>
+              <button class="btn btn-secondary btn-small detail-btn" type="button" data-detail="detail-catfeeder">
+                <svg class="icon" aria-hidden="true"><use href="#i-play" /></svg>
+                How it works
+              </button>
+            </div>
+          </article>
+
+          <article class="project build">
+            <div class="build-art" aria-hidden="true">
+              <svg viewBox="0 0 320 200" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                  <linearGradient id="mark-grad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#9dbdae" />
+                    <stop offset="1" stop-color="#6f9a8a" />
+                  </linearGradient>
+                </defs>
+                <path d="M44 44h16M44 44v16M276 44h-16M276 44v16M44 156h16M44 156v-16M276 156h-16M276 156v-16" />
+                <rect x="112" y="46" width="96" height="96" rx="24" fill="url(#mark-grad)" stroke="none" />
+                <text x="160" y="118" text-anchor="middle" font-size="64" font-weight="800" fill="#14201b" stroke="none" font-family="Bricolage Grotesque, Segoe UI, Arial, sans-serif">M</text>
+                <circle cx="136" cy="170" r="7" fill="#9dbdae" stroke="none" />
+                <circle cx="156" cy="170" r="7" fill="#6f9a8a" stroke="none" />
+                <circle cx="176" cy="170" r="7" fill="#1e201f" />
+                <circle cx="196" cy="170" r="7" fill="#ecebe6" stroke="none" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">Portfolio</span></div>
+              <h3>Visual Identity</h3>
+              <p>Designing a consistent digital identity with a modern and minimal approach.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+            <section id="certificates" class="section reveal" aria-labelledby="certs-title">
+        <div class="section-head">
+          <h2 id="certs-title" class="lockup"><span class="lk-xl">Certificates</span> <span class="lk-s">and experience</span></h2>
+          <p class="section-note">Select a certificate to view it full size.</p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="project cert">
+            <button
+              class="cert-thumb"
+              type="button"
+              data-lightbox
+              data-group="certs"
+              data-full="assets/img/cert-oracle-java-1400.webp"
+              data-title="Java Fundamentals, Oracle Academy"
+              aria-label="View the Java Fundamentals certificate full size"
+            >
+              <img
+                src="assets/img/cert-oracle-java-800.webp"
+                width="800"
+                height="618"
+                alt="Oracle Academy Award of Completion for Java Fundamentals in English, presented to Muhammad Iqbal Maulana on 21 August 2026"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">Programming</span><span class="when">21 August 2026</span></div>
+              <h3>Java Fundamentals</h3>
+              <p class="cert-issuer">Oracle Academy</p>
+              <p>Finished all coursework in the English-language Java course.</p>
+            </div>
+          </article>
+
+          <article class="project cert">
+            <button
+              class="cert-thumb"
+              type="button"
+              data-lightbox
+              data-group="certs"
+              data-full="assets/img/cert-hection-debate-1400.webp"
+              data-title="HECTION 13.0 debate, PECC"
+              aria-label="View the HECTION 13.0 debate certificate full size"
+            >
+              <img
+                src="assets/img/cert-hection-debate-800.webp"
+                width="800"
+                height="566"
+                alt="Certificate naming Muhammad Iqbal Maulana as a participant of debate at the High School English Competition (HECTION) 13.0"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">English debate</span><span class="when">February 2026</span></div>
+              <h3>HECTION 13.0</h3>
+              <p class="cert-issuer">Polytechnic English Conversation Club (PECC)</p>
+              <p>Took part in the debate category of this high school English competition.</p>
+            </div>
+          </article>
+
+          <article class="project cert">
+            <button
+              class="cert-thumb"
+              type="button"
+              data-lightbox
+              data-group="certs"
+              data-full="assets/img/cert-sic-stage2-1400.webp"
+              data-title="Samsung Innovation Campus Batch 6, Stage 2"
+              aria-label="View the Samsung Innovation Campus Stage 2 certificate full size"
+            >
+              <img
+                src="assets/img/cert-sic-stage2-800.webp"
+                width="800"
+                height="567"
+                alt="Samsung Innovation Campus Batch 6 certificate of participation for Stage 2, presented to Muhammad Iqbal Maulana"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">AI programme</span><span class="when">February 2025</span></div>
+              <h3>Samsung Innovation Campus, Stage 2</h3>
+              <p class="cert-issuer">Hacktiv8 Indonesia</p>
+              <p>Took part in Stage 2 of Batch 6, themed AI in Everyday Life.</p>
+            </div>
+          </article>
+
+          <article class="project cert">
+            <button
+              class="cert-thumb"
+              type="button"
+              data-lightbox
+              data-group="certs"
+              data-full="assets/img/cert-sic-stage1-1400.webp"
+              data-title="Samsung Innovation Campus Batch 6, Stage 1"
+              aria-label="View the Samsung Innovation Campus Stage 1 certificate full size"
+            >
+              <img
+                src="assets/img/cert-sic-stage1-800.webp"
+                width="800"
+                height="450"
+                alt="Samsung Innovation Campus Batch 6 certificate of participation for the Stage 1 logic test, presented to Muhammad Iqbal Maulana"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="poster-badge" aria-hidden="true"><svg class="icon"><use href="#i-expand" /></svg></span>
+            </button>
+            <div class="project-info">
+              <div class="project-meta"><span class="tag">AI programme</span><span class="when">December 2024</span></div>
+              <h3>Samsung Innovation Campus, Stage 1</h3>
+              <p class="cert-issuer">Hacktiv8 Indonesia</p>
+              <p>Took part in the Batch 6 logic test that opens the programme.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cv" class="section reveal" aria-labelledby="cv-title">
+        <div class="section-head">
+          <h2 id="cv-title" class="lockup"><span class="lk-xl">Profile</span> <span class="lk-s">summary</span></h2>
+        </div>
+
+        <div class="cv-wrap">
+          <aside class="card resume-card profile-card" aria-label="Profile and contact">
+            <h3 class="profile-name name-lockup name-lockup-small"><span class="nl-first">Muhammad</span> <span class="nl-mid">Iqbal</span> <span class="nl-last">Maulana</span></h3>
+            <p>
+              A creative and motivated student who enjoys graphic design and practical technology.
+              Interested in design, visual communication, and simple IoT projects that improve daily life.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg></span>
+                <a href="tel:+6282230224951">+62-822-3022-4951</a>
+              </li>
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg></span>
+                <a href="mailto:maulana.iqbal0304@gmail.com">maulana.iqbal0304@gmail.com</a>
+              </li>
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg></span>
+                <span>Kota Semarang, Indonesia</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary btn-small no-print" type="button" data-print>
+              <svg class="icon" aria-hidden="true"><use href="#i-download" /></svg>
+              Save CV as PDF
+            </button>
+          </aside>
+
+          <article class="card resume-card cv-article">
+            <div class="cv-block">
+              <h3>Education</h3>
+              <ol class="timeline">
+                <li>
+                  <div class="entry-head"><strong>SMK Negeri 7 Semarang</strong><span class="when">2024 – present</span></div>
+                  <p>Studying technology and design-related skills.</p>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>SMP Negeri 5 Semarang</strong><span class="when">2021 – 2024</span></div>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>SDIB Annisa Semarang</strong><span class="when">2015 – 2021</span></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="cv-block">
+              <h3>Experience</h3>
+              <ol class="timeline">
+                <li>
+                  <div class="entry-head"><strong>Web design</strong><span class="when">11th grade</span></div>
+                  <p>Designed and built a website for a school project.</p>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>IoT contributor</strong><span class="when">11th grade</span></div>
+                  <p>Helped with a project involving a miniature greenhouse with multiple sensors.</p>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>Graphic design</strong><span class="when">10th grade</span></div>
+                  <p>Created 15 posters for the independence day of Indonesia.</p>
+                </li>
+              </ol>
+            </div>
+
+            <div class="cv-block">
+              <h3>Certificates</h3>
+              <ol class="timeline">
+                <li>
+                  <div class="entry-head"><strong>Java Fundamentals, Oracle Academy</strong><span class="when">Aug 2026</span></div>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>HECTION 13.0 English debate, PECC</strong><span class="when">Feb 2026</span></div>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>Samsung Innovation Campus Batch 6, Stage 2</strong><span class="when">Feb 2025</span></div>
+                </li>
+                <li>
+                  <div class="entry-head"><strong>Samsung Innovation Campus Batch 6, Stage 1</strong><span class="when">Dec 2024</span></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="cv-block">
+              <h3>Skills</h3>
+              <ul class="chips">
+                <li>Drawing</li>
+                <li>Graphic design</li>
+                <li>English</li>
+                <li>Patience</li>
+                <li>Problem solving</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="section reveal" aria-labelledby="contact-title">
+        <div class="section-head">
+          <h2 id="contact-title" class="lockup"><span class="lk-s">Get in</span> <span class="lk-xl">touch</span></h2>
+          <p class="section-note">Write to me here, or use the details beside the form.</p>
+        </div>
+
+        <div class="contact-wrap">
+          <aside class="card contact-card" aria-label="Contact details">
+            <ul class="contact-list">
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg></span>
+                <a href="tel:+6282230224951">+62-822-3022-4951</a>
+              </li>
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg></span>
+                <a href="mailto:maulana.iqbal0304@gmail.com">maulana.iqbal0304@gmail.com</a>
+              </li>
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-chat" /></svg></span>
+                <a href="https://wa.me/6282230224951" target="_blank" rel="noopener">Chat on WhatsApp</a>
+              </li>
+              <li>
+                <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg></span>
+                <span>Kota Semarang, Indonesia</span>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="card contact-form" id="contact-form" action="mailto:maulana.iqbal0304@gmail.com" method="post" enctype="text/plain" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="80" />
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="120" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required minlength="10" maxlength="2000"></textarea>
+            </div>
+            <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit">
+                <svg class="icon" aria-hidden="true"><use href="#i-send" /></svg>
+                <span class="btn-label">Send message</span>
+              </button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© 2026 Muhammad Iqbal Maulana</p>
+      <a class="to-top" href="#home">
+        Back to top
+        <svg class="icon" aria-hidden="true"><use href="#i-up" /></svg>
+      </a>
+    </footer>
+
+    <script type="application/json" id="deck-slides">
+      [
+        { "full": "assets/img/deck-1-1400.webp", "title": "Title slide", "alt": "Title slide: How to Configure a PC, with an illustration of a computer case, dated 13 February 2026" },
+        { "full": "assets/img/deck-2-1400.webp", "title": "Slide 1, the CPU socket", "alt": "Slide 1: the CPU socket has been located, with a close-up of a motherboard CPU socket and a cooling fan" },
+        { "full": "assets/img/deck-3-1400.webp", "title": "Slide 2, RAM and GPU", "alt": "Slide 2: the RAM has been firmly inserted, with photos of memory sticks, a graphics card and a RAM slot" },
+        { "full": "assets/img/deck-4-1400.webp", "title": "Slide 3, the motherboard", "alt": "Slide 3: the motherboard has been mounted, with a photo of a motherboard being screwed into a PC case" },
+        { "full": "assets/img/deck-5-1400.webp", "title": "Thank you slide", "alt": "Closing slide that says thank you" }
+      ]
+    </script>
+
+    <!--
+      IoT "How it works" panels.
+      To change a video, edit data-yt (the part after v= in a YouTube link) and the link below it.
+      The step text is general; edit it so it matches the parts you actually used.
+    -->
+    <dialog class="detail" id="detail-greenhouse" aria-labelledby="detail-greenhouse-title">
+      <button class="lb-btn detail-close" type="button" aria-label="Close explanation">
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <div class="detail-body">
+        <div class="detail-copy">
+          <p class="detail-kicker">Smartfarm</p>
+          <h3 id="detail-greenhouse-title" class="lockup detail-title"><span class="lk-s">Mini</span> <span class="lk-xl">greenhouse</span></h3>
+          <p class="detail-lead">A smart farm built like a miniature greenhouse. It keeps watch on the plants so conditions can be checked and corrected without opening it up.</p>
+          <ol class="flow">
+            <li><strong>Sense</strong><span>Sensors take regular readings of the growing conditions inside the greenhouse.</span></li>
+            <li><strong>Decide</strong><span>A microcontroller compares each reading with the range the plants need.</span></li>
+            <li><strong>Act</strong><span>When a reading drifts out of range, the controller switches the matching output on or off, for example a fan or a pump.</span></li>
+            <li><strong>Show</strong><span>The latest readings are displayed so the plants can be monitored at a glance.</span></li>
+          </ol>
+        </div>
+        <div class="detail-media">
+          <div class="video" data-yt="Qyt078IGShk" data-title="Smart Farm Project Using ESP32">
+            <button class="video-play" type="button" aria-label="Play reference video: Smart Farm Project Using ESP32">
+              <span class="video-play-icon"><svg class="icon" aria-hidden="true"><use href="#i-play" /></svg></span>
+              <span class="video-play-text">Play reference video</span>
+            </button>
+          </div>
+          <p class="video-note">This is a reference video of a similar smart farm build, not footage of my own project.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=Qyt078IGShk" target="_blank" rel="noopener">
+            Open on YouTube <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="detail" id="detail-catfeeder" aria-labelledby="detail-catfeeder-title">
+      <button class="lb-btn detail-close" type="button" aria-label="Close explanation">
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <div class="detail-body">
+        <div class="detail-copy">
+          <p class="detail-kicker">Automation</p>
+          <h3 id="detail-catfeeder-title" class="lockup detail-title"><span class="lk-s">Automatic</span> <span class="lk-xl">cat feeder</span></h3>
+          <p class="detail-lead">A feeder that uses AI to recognise a cat coming towards it, so food is only served when a cat is actually there.</p>
+          <ol class="flow">
+            <li><strong>Watch</strong><span>A camera keeps an eye on the area in front of the feeder.</span></li>
+            <li><strong>Detect</strong><span>An AI model checks what the camera sees and recognises an incoming cat.</span></li>
+            <li><strong>Feed</strong><span>Once a cat is detected, the feeder is triggered to serve food.</span></li>
+          </ol>
+        </div>
+        <div class="detail-media">
+          <div class="video" data-yt="XTSRnj3XXqw" data-title="Automatic pet feeder with pet recognition AI">
+            <button class="video-play" type="button" aria-label="Play reference video: automatic pet feeder with pet recognition AI">
+              <span class="video-play-icon"><svg class="icon" aria-hidden="true"><use href="#i-play" /></svg></span>
+              <span class="video-play-text">Play reference video</span>
+            </button>
+          </div>
+          <p class="video-note">This is a reference video of a similar AI pet feeder, not footage of my own project.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=XTSRnj3XXqw" target="_blank" rel="noopener">
+            Open on YouTube <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg>
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox" aria-label="Image viewer">
+      <button class="lb-btn lb-close" type="button" aria-label="Close viewer">
+        <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+      </button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous image">
+        <svg class="icon" aria-hidden="true"><use href="#i-left" /></svg>
+      </button>
+      <figure class="lb-figure">
+        <img class="lb-img" src="" alt="" />
+        <figcaption class="lb-caption"></figcaption>
+      </figure>
+      <button class="lb-btn lb-next" type="button" aria-label="Next image">
+        <svg class="icon" aria-hidden="true"><use href="#i-right" /></svg>
+      </button>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
